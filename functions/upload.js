@@ -14,6 +14,7 @@ export async function onRequestPost(context) {  // Contents of context object
          headers: request.headers,
          body: request.body,
      });
-    return response;
+     //返回第一个地址
+    return response[0];
   }
   
